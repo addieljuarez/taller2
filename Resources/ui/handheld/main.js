@@ -1,6 +1,11 @@
 function Main (){
 	var Eventos = require('ui/handheld/eventos');
+	var Param = require('ui/handheld/param');
+	var Properties = require('ui/handheld/properties'); 
 	
+	
+	var numero = 10;
+	var numero2 = 'numero';
 	
 	var self = Titanium.UI.createScrollView({
 		height:300,
@@ -13,7 +18,7 @@ function Main (){
 	
 	
 	var boton1 = Titanium.UI.createButton({
-		title:'boton',
+		title:'Evento1',
 		height:40,
 		width:150,
 		top:20,
@@ -27,28 +32,28 @@ function Main (){
 	
 	
 	var boton2 = Titanium.UI.createButton({
-		title:'boton',
+		title:'Eventos App',
 		height:40,
 		width:150,
 		top:20
 	});
 	
 	var boton3 = Titanium.UI.createButton({
-		title:'boton',
+		title:'parametro',
 		height:40,
 		width:150,
 		top:20
 	});
 	
 	var boton4 = Titanium.UI.createButton({
-		title:'boton',
+		title:'Properties',
 		height:40,
 		width:150,
 		top:20
 	});
 	
 	var boton5 = Titanium.UI.createButton({
-		title:'boton',
+		title:'mapa',
 		height:40,
 		width:150,
 		top:20
@@ -90,7 +95,23 @@ function Main (){
 	});
 	
 	
+	boton3.addEventListener('click', function(e){
+		var param = new Param(numero);
+		param.open();
+	});
 	
+	
+	boton4.addEventListener('click', function(e){
+		var properties = new Properties;
+		properties.open();
+		Titanium.App.Properties.setString('pasarNumero', numero2);
+	});
+	
+	
+	
+	boton5.addEventListener('click', function(e){
+		
+	});
 	
 	//-------------------------------------------------------
 	

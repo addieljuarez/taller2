@@ -13,7 +13,7 @@ function Eventos (){
 	
 	boton.addEventListener('click', function(e){
 		self.close();
-		Titanium.App.fireEvent('Agregarfooter');
+		Titanium.App.fireEvent('quitarFooter');
 	});
 	
 	

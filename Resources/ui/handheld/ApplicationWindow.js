@@ -28,6 +28,18 @@ function ApplicationWindow() {
 		self.add(footer);
 	});
 	
+	Titanium.App.addEventListener('quitarFooter', function(e){
+		self.remove(footer);
+	});
+	
+	// self.addEventListener('click', function(e){
+		// self.close();
+	// });
+	
+	
+	self.addEventListener('open', function(e){
+		Titanium.App.fireEvent('Agregarfooter');
+	});
 	
 	return self;
 }
