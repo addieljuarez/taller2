@@ -20,6 +20,7 @@ function ApplicationWindow() {
 	var main = new Main();
 	
 	
+	
 	self.add(header);
 	self.add(main);
 	
