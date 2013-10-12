@@ -18,11 +18,15 @@ function ApplicationWindow() {
 	
 	var header = new Header();
 	var main = new Main();
-	
+	var footer = new Footer();
 	
 	
 	self.add(header);
 	self.add(main);
+	
+	Titanium.App.addEventListener('Agregarfooter', function(e){
+		self.add(footer);
+	});
 	
 	
 	return self;

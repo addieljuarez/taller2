@@ -1,4 +1,6 @@
 function Main (){
+	var Eventos = require('ui/handheld/eventos');
+	
 	
 	var self = Titanium.UI.createScrollView({
 		height:300,
@@ -78,6 +80,13 @@ function Main (){
 		}else if(e.direction == 'right'){
 			alert('right');
 		}
+	});
+	
+	
+	
+	boton2.addEventListener('click', function(){
+		var eventos = new Eventos();
+		eventos.open();
 	});
 	
 	
