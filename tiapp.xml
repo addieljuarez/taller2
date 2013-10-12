@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><ti:app xmlns:ti="http://ti.appcelerator.org">
+    <property name="acs-oauth-secret-development" type="string">7PrkkkIxtcCU1tkkeCsMLdddWkEk8SIZ</property>
+    <property name="acs-oauth-key-development" type="string">fCBO9wX3Rdr0uNh006QXouCco0BaNkUH</property>
+    <property name="acs-api-key-development" type="string">N3ZSxk5juJTdzv0qlPcqy0XeGoVSqGTt</property>
+    <property name="acs-oauth-secret-production" type="string">Tvx4yfSdYvnQSjeEZJIYXdJ9J25Wihs8</property>
+    <property name="acs-oauth-key-production" type="string">JnFhpP3oQMCBY6TsFzbqmw54hFP345Tl</property>
+    <property name="acs-api-key-production" type="string">tg3wSCJLBJ5ZSE6zCyDcKhIcYQAveawb</property>
+    <id>com.negoapps.holaMundo9</id>
+    <name>HolaMundo9</name>
+    <version>1.0</version>
+    <publisher>Addiel</publisher>
+    <url>http://</url>
+    <description>not specified</description>
+    <copyright>2013 by Addiel</copyright>
+    <icon>appicon.png</icon>
+    <persistent-wifi>false</persistent-wifi>
+    <prerendered-icon>false</prerendered-icon>
+    <statusbar-style>default</statusbar-style>
+    <statusbar-hidden>false</statusbar-hidden>
+    <fullscreen>false</fullscreen>
+    <navbar-hidden>false</navbar-hidden>
+    <analytics>true</analytics>
+    <guid>08468ad0-fa8c-4c5e-8654-47fbb3392737</guid>
+    <property name="ti.ui.defaultunit" type="string">system</property>
+    <iphone>
+        <orientations device="iphone">
+            <orientation>Ti.UI.PORTRAIT</orientation>
+        </orientations>
+        <orientations device="ipad">
+            <orientation>Ti.UI.PORTRAIT</orientation>
+            <orientation>Ti.UI.UPSIDE_PORTRAIT</orientation>
+            <orientation>Ti.UI.LANDSCAPE_LEFT</orientation>
+            <orientation>Ti.UI.LANDSCAPE_RIGHT</orientation>
+        </orientations>
+    </iphone>
+    <android xmlns:android="http://schemas.android.com/apk/res/android"/>
+    <mobileweb>
+        <precache/>
+        <splash>
+            <enabled>true</enabled>
+            <inline-css-images>true</inline-css-images>
+        </splash>
+        <theme>default</theme>
+    </mobileweb>
+    <modules>
+        <module platform="commonjs">ti.cloud</module>
+    </modules>
+    <deployment-targets>
+        <target device="android">true</target>
+        <target device="blackberry">false</target>
+        <target device="ipad">true</target>
+        <target device="iphone">true</target>
+        <target device="mobileweb">true</target>
+        <target device="tizen">false</target>
+    </deployment-targets>
+    <sdk-version>3.1.2.GA</sdk-version>
+<property name="ti.deploytype">test</property></ti:app>
