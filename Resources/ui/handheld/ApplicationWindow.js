@@ -1,19 +1,26 @@
-//Application Window Component Constructor
 function ApplicationWindow() {
-	//load component dependencies
-	var FirstView = require('ui/common/FirstView');
-		
-	//create component instance
+	
 	var self = Ti.UI.createWindow({
-		backgroundColor:'#ffffff'
+		top:10,
+		bottom:10,
+		left:10,
+		right:10,
+		borderColor:'green',
+		borderRadius:5,
+		backgroundColor:'red',
 	});
-		
-	//construct UI
-	var firstView = new FirstView();
-	self.add(firstView);
+	
+	
+	var Header = require('ui/handheld/header');
+	var Main = require('ui/handheld/main');
+	var Footer = require('ui/handheld/footer');
+	
+	var header = new Header();
+	
+	
+	
+	self.add(header);
 	
 	return self;
 }
-
-//make constructor function the public component interface
 module.exports = ApplicationWindow;
