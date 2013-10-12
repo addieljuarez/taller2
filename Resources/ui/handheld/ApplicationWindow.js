@@ -8,6 +8,7 @@ function ApplicationWindow() {
 		borderColor:'green',
 		borderRadius:5,
 		backgroundColor:'red',
+		layout:'vertical',
 	});
 	
 	
@@ -16,10 +17,12 @@ function ApplicationWindow() {
 	var Footer = require('ui/handheld/footer');
 	
 	var header = new Header();
-	
+	var main = new Main();
 	
 	
 	self.add(header);
+	self.add(main);
+	
 	
 	return self;
 }
