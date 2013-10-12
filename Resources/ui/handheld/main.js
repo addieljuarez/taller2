@@ -2,6 +2,8 @@ function Main (){
 	var Eventos = require('ui/handheld/eventos');
 	var Param = require('ui/handheld/param');
 	var Properties = require('ui/handheld/properties'); 
+	var Mapa = require('ui/handheld/mapa');
+	
 	
 	
 	var numero = 10;
@@ -110,7 +112,8 @@ function Main (){
 	
 	
 	boton5.addEventListener('click', function(e){
-		
+		var mapa = new Mapa();
+		mapa.open();
 	});
 	
 	//-------------------------------------------------------
