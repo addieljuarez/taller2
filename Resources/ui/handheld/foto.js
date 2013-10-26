@@ -13,6 +13,8 @@ function Foto(){
 	var imagen = Titanium.UI.createImageView({
 		height:200,
 		width:200,
+		borderColor:'red',
+		// image:'http://berepublic.es/newbeBlog/wp-content/uploads/appcelerator-logo1.png',
 	});
 	
 	
@@ -58,6 +60,9 @@ function Foto(){
 			allowEditing:true,
 		});
 	}
+	
+	
+	
 	
 	
 	self.add(imagen);
