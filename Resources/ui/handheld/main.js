@@ -3,6 +3,7 @@ function Main (){
 	var Param = require('ui/handheld/param');
 	var Properties = require('ui/handheld/properties'); 
 	var Mapa = require('ui/handheld/mapa');
+	var Foto = require('ui/handheld/foto');
 	
 	
 	
@@ -62,7 +63,7 @@ function Main (){
 	});
 	
 	var boton6 = Titanium.UI.createButton({
-		title:'boton',
+		title:'foto',
 		height:40,
 		width:150,
 		top:20
@@ -113,8 +114,19 @@ function Main (){
 	
 	boton5.addEventListener('click', function(e){
 		var mapa = new Mapa();
-		mapa.open();
+		mapa.open({
+			modal:true,
+		});
 	});
+	
+	
+	
+	boton6.addEventListener('click', function(e){
+		var foto = new Foto();
+		foto.open();
+	});
+	
+	
 	
 	//-------------------------------------------------------
 	

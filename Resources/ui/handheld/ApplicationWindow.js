@@ -1,7 +1,7 @@
 function ApplicationWindow() {
 	
 	var self = Ti.UI.createWindow({
-		top:10,
+		top:'10dpi',
 		bottom:10,
 		left:10,
 		right:10,
